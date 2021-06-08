@@ -37,6 +37,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
+    
+    <script defer src="main.js"></script>
 
 </head>
 
@@ -244,28 +246,27 @@
         </footer>
 
 
-
     </div>
     <script>
         function initMap() {
-            const myLatLng = {
-                lat: 37.782293,
-                lng: -122.391240
-            }
-            const map = new google.maps.Map(
-                document.getElementById('map'), {
-                    center: myLatLng,
-                    scrollwheel: false,
-                    zoom: 18
-                }
-            );
-            const marker = new google.maps.Marker({
-                position: myLatLng,
-                map: map,
-                title: 'GitHub'
-            });
-
+        const myLatLng = {
+            lat: 37.782293,
+            lng: -122.391240
         }
+        const map = new google.maps.Map(
+            document.getElementById('map'), {
+                center: myLatLng,
+                scrollwheel: false,
+                zoom: 18
+            }
+        );
+        const marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: 'GitHub'
+        });
+
+    }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTQIlxBn5AfKGvsfJiormAE1esN3fcCkg&callback=initMap"
         async defer></script>
