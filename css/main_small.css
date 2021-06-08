@@ -24,5 +24,22 @@
 /* PRICING CARD */
 .section--pricing .card{
     display: block;
-    
+
+}
+.section--pricing .card .cell2{
+    border-left: none;
+    border-top: 1px solid #e5e5e5;
+}
+
+/* FOOTER */
+footer .site-links{
+    float: none;
+    display: block;
+    text-align: center;
+}
+footer .site-links:first-child{
+    margin-bottom: 20px;
+}
+footer .site-links li{
+    display: inline;
 }
